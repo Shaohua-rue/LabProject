@@ -22,3 +22,8 @@ YoloOnnx 使用说明
 - useJson 为Json封装与TCP调用
 - RosServerJosn 添加观察者模式通知机制
 - RosServer 添加ros服务通信示例
+
+## AutowareCar
+- CARGUI QT上位机
+- CAR_SERVER 阿里云服务器服务端
+- CAR_TASK 巡检车端
