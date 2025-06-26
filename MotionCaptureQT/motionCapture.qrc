@@ -1,0 +1,18 @@
+<RCC>
+    <qresource prefix="/">
+        <file>resource/shader/shader_axis.fs</file>
+        <file>resource/shader/shader_axis.vs</file>
+        <file>resource/shader/shader_mesh.fs</file>
+        <file>resource/shader/shader_mesh.vs</file>
+        <file>resource/shader/shader_point.fs</file>
+        <file>resource/shader/shader_point.vs</file>
+        <file>resource/shader/shader_camera.fs</file>
+        <file>resource/shader/shader_camera.vs</file>
+        <file>resource/image/windowTitle/退出.png</file>
+        <file>resource/image/windowTitle/最大化.png</file>
+        <file>resource/image/windowTitle/最小化.png</file>
+        <file>resource/image/windowTitle/People.png</file>
+        <file>resource/image/windowTitle/屏幕截图 2024-01-07 213609.png</file>
+        <file>resource/image/windowTitle/摄像机 .png</file>
+    </qresource>
+</RCC>
