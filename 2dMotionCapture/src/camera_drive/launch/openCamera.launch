@@ -1,0 +1,5 @@
+<launch>
+
+  <node pkg="camera_drive" type="cameraDrive" name="openCamera" output="screen"/>
+ 
+</launch>
