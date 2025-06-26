@@ -1,0 +1,2 @@
+OpenCVExternalPara.cpp 使用OpenCV库中的函数分解基础矩阵F分解出旋转矩阵R与平移向量t
+externalParmeter.cpp 分解基础矩阵F分解除旋转矩阵R与平移矩阵t
