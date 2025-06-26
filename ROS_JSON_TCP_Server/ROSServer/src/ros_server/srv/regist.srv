@@ -1,0 +1,7 @@
+# 客户端请求时发送的两个数字
+int32 userid
+int32 password
+---
+# 服务器响应发送的数据
+int32 recv
+

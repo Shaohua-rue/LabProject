@@ -16,3 +16,9 @@ YoloOnnx 使用说明
 
 ## 2dMotionCapture
 二维平面定位-提取二维码像素坐标-转化为世界坐标
+
+## ROS_JSON_TCP_Server
+
+- useJson 为Json封装与TCP调用
+- RosServerJosn 添加观察者模式通知机制
+- RosServer 添加ros服务通信示例
