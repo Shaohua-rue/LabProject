@@ -1,0 +1,49 @@
+Ubuntu源码安装多个版本的opencv并切换使用
+
+opencv官网下载源码 	https://opencv.org/releases/ 
+
+安装相关依赖
+sudo apt-get install build-essential libgtk2.0-dev libavcodec-dev libavformat-dev libjpeg.dev libtiff5.dev libswscale-dev
+
+问题：
+sudo apt-get  libgtk2.0-dev安装依赖不满足
+
+sudo apt-get install gir1.2-pango-1.0=1.50.6+ds-2 libpango-1.0-0=1.50.6+ds-2 libpangocairo-1.0-0=1.50.6+ds-2 libpangoft2-1.0-0=1.50.6+ds-2 libpangoxft-1.0-0=1.50.6+ds-2 pango1.0-tools=1.50.6+ds-2
+再次：sudo apt-get libgtk2.0-dev
+
+
+
+进入opencv源码
+mkdir build
+cd build
+cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local/opencv_4.5.5 ..
+
+#将安装路径设置为/usr/local/opencv_4.5.5，如果不指定安装路径，则默认各部分分别安装在/usr/local/目录的include，bin，lib3个文件夹
+
+make -j8 
+
+sudo make install
+
+
+
+########CMakeLists写法
+cmake_minimum_required(VERSION 3.10)
+project(MyProject)
+
+set(CMAKE_CXX_STANDARD 14)
+
+# 指定OpenCV的安装路径
+set(OpenCV_DIR /usr/local/opencv4.5.5/lib/cmake/opencv4)
+
+# 查找OpenCV库
+find_package(OpenCV REQUIRED)
+
+# 包含OpenCV的头文件
+include_directories(${OpenCV_INCLUDE_DIRS})
+
+# 添加源文件
+add_executable(MyProject main.cpp)
+
+# 链接OpenCV库
+target_link_libraries(MyProject ${OpenCV_LIBS})
+
